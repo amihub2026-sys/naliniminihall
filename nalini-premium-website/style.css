@@ -1295,3 +1295,240 @@ footer p {
   color:#555;
   font-weight:600;
 }
+
+
+
+
+/* =========================================
+   SOORYA SERVICE HOME LUXURY
+========================================= */
+
+.soorya-section {
+  background: linear-gradient(180deg, #fff9ee, #f5e6d7);
+}
+
+.soorya-heading {
+  text-align: center;
+  margin-bottom: 42px;
+}
+
+.soorya-heading h2 {
+  color: var(--maroon);
+  margin-bottom: 12px;
+}
+
+.soorya-heading > p:last-child {
+  color: var(--muted);
+  font-size: 16px;
+}
+
+.soorya-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 36px;
+  align-items: stretch;
+  max-width: 1400px;
+  margin: auto;
+}
+
+/* LEFT VIDEO */
+
+.soorya-video-wrapper {
+  background: #fff;
+  padding: 14px;
+  border-radius: 28px;
+  box-shadow: var(--shadow);
+  border: 1px solid rgba(192,121,18,.18);
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.soorya-video {
+  width: 100%;
+  height: 100%;
+  min-height: 420px;
+  max-height: 700px;
+  object-fit: contain;
+  background: #150006;
+  border-radius: 20px;
+  display: block;
+}
+
+.soorya-video-caption {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  font-weight: 700;
+  color: var(--maroon);
+  padding: 8px;
+}
+
+.soorya-video-caption i {
+  color: var(--gold2);
+  font-size: 21px;
+}
+
+/* RIGHT DETAILS */
+
+.soorya-details {
+  background: #fff;
+  border-radius: 28px;
+  padding: 32px;
+  box-shadow: var(--shadow);
+  border: 1px solid rgba(192,121,18,.18);
+  min-width: 0;
+}
+
+.soorya-address {
+  display: flex;
+  gap: 16px;
+  padding-bottom: 22px;
+  border-bottom: 1px solid #ead9cb;
+}
+
+.soorya-address > i {
+  font-size: 24px;
+  color: var(--maroon);
+  padding-top: 6px;
+}
+
+.soorya-address h3 {
+  font-size: 20px;
+  color: var(--maroon);
+  margin-bottom: 8px;
+}
+
+.soorya-address p {
+  line-height: 1.7;
+  font-weight: 600;
+}
+
+.soorya-address span {
+  display: block;
+  color: var(--muted);
+  margin-top: 5px;
+  font-size: 14px;
+}
+
+.soorya-subtitle {
+  font-size: 21px;
+  color: var(--maroon);
+  margin: 24px 0 18px;
+}
+
+.soorya-facilities {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 12px;
+}
+
+.soorya-facilities > div {
+  display: flex;
+  align-items: flex-start;
+  gap: 13px;
+  background: #fff8ef;
+  border: 1px solid #f0e1d3;
+  border-radius: 13px;
+  padding: 12px 14px;
+  line-height: 1.6;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.soorya-facilities i {
+  width: 23px;
+  min-width: 23px;
+  text-align: center;
+  color: var(--gold2);
+  font-size: 17px;
+  margin-top: 3px;
+}
+
+/* RENT */
+
+.soorya-rent {
+  background: linear-gradient(
+    135deg,
+    var(--maroon2),
+    var(--maroon)
+  );
+  padding: 24px;
+  border-radius: 20px;
+  margin-top: 24px;
+  color: #fff;
+}
+
+.soorya-rent span {
+  color: #ffe0a0;
+  font-weight: 600;
+}
+
+.soorya-rent h3 {
+  font-size: 30px;
+  color: var(--gold);
+  margin: 8px 0;
+}
+
+.soorya-rent small {
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.soorya-rent p {
+  font-size: 13px;
+  line-height: 1.7;
+  color: #fff0e7;
+}
+
+/* TABLET */
+
+@media (max-width: 1024px) {
+  .soorya-container {
+    grid-template-columns: 1fr;
+  }
+
+  .soorya-video {
+    height: auto;
+    min-height: 0;
+    max-height: 650px;
+    aspect-ratio: 16 / 9;
+  }
+}
+
+/* MOBILE */
+
+@media (max-width: 768px) {
+  .soorya-heading {
+    margin-bottom: 25px;
+  }
+
+  .soorya-container {
+    gap: 22px;
+  }
+
+  .soorya-video-wrapper {
+    padding: 8px;
+    border-radius: 18px;
+  }
+
+  .soorya-video {
+    border-radius: 12px;
+    aspect-ratio: 16 / 9;
+  }
+
+  .soorya-details {
+    padding: 22px 18px;
+    border-radius: 20px;
+  }
+
+  .soorya-rent {
+    padding: 20px;
+  }
+
+  .soorya-rent h3 {
+    font-size: 25px;
+  }
+}
